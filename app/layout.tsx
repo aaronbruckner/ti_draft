@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import './globals.css'
 import type { Metadata } from 'next'
 
@@ -15,6 +16,11 @@ export default function RootLayout({children}: Props) {
     <html lang="en">
       <body>
         <header>TI4 Draft</header>
+        <nav>
+          <Link href={'/login'}>Login</Link>
+          <Link href={'/register'}>Register</Link>
+          <Link href={'/dashboard'}>Dashboard</Link>
+        </nav>
         <section>
           {children}
         </section>
